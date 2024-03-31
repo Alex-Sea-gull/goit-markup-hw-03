@@ -8,18 +8,45 @@ a {
   text-decoration: none;
 }
 
-ul {
+ul,
+ol {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /*------------------------------*/
 /*-----------HEADER-------------*/
 
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-nav {
   color: #2e2f42;
+  display: flex;
+  align-items: center;
+}
+
+.header-menu-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-logo {
@@ -30,13 +57,11 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .accent {
   color: #2e2f42;
-}
-
-.header-menu-list {
 }
 
 .header-menu-item {
@@ -49,6 +74,8 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
+  display: block;
 }
 
 .header-menu-link:hover,
@@ -58,12 +85,12 @@ ul {
 
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
 
-.header-contacts {
-}
-
-.header-contact-item {
+.header-contacts-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-contacts-link {
@@ -84,6 +111,14 @@ ul {
 /*------------------------------*/
 /*-----------SERVICE BUTTON-------------*/
 
+.container {
+  max-width: 1158px;
+}
+
+.button-container {
+  padding: 188px 472px;
+}
+
 .service {
   background-color: #2e2f42;
 }
@@ -94,6 +129,8 @@ ul {
   letter-spacing: 0.02em;
   color: #fff;
   text-align: center;
+  width: 496px;
+  padding: 0 auto;
 }
 
 .service-button {
@@ -104,6 +141,9 @@ ul {
   color: #fff;
   background: #4d5ae5;
   cursor: pointer;
+  padding: 16px 32px;
+  border-radius: 4px;
+  margin-top: 48px;
 }
 
 .service-button:hover {
@@ -117,21 +157,12 @@ ul {
 /*------------------------------*/
 /*-----------ADVANTAGE-------------*/
 
-.advantages {
-}
-
 .title-advantages {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
-}
-
-.advantages-list {
-}
-
-.advantages-item {
 }
 
 .subtitle-advantages {
@@ -166,9 +197,6 @@ ul {
   color: #2e2f42;
 }
 
-.team-list {
-}
-
 .team-item {
   background-color: #ffffff;
 }
@@ -195,9 +223,6 @@ ul {
 /*------------------------------*/
 /*---------Our portfolio--------*/
 
-.portfolio {
-}
-
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -206,9 +231,6 @@ ul {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-}
-
-.portfolio-list {
 }
 
 .portfolio-item {
